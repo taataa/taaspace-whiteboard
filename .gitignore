@@ -75,6 +75,7 @@ bower_components
 #
 # Static assets generated in the build process.
 ################################################
+client/app.js
 .tmp
 
 

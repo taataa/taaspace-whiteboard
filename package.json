@@ -1,11 +1,12 @@
 {
   "name": "taaspace-whiteboard",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A minimal real-time whiteboard app implemented with Taaspace",
   "main": "server/index.js",
   "scripts": {
-    "start": "node server/index.js",
-    "build": "webpack"
+    "start": "npm run build && node server/index.js",
+    "build": "webpack",
+    "populate": "node server/populate.js"
   },
   "repository": {
     "type": "git",
@@ -25,9 +26,14 @@
     "express": "^4.14.0",
     "leveldown": "^1.5.0",
     "levelup": "^1.3.3",
+    "lodash": "^4.17.2",
     "mkdirp": "^0.5.1",
+    "nudged": "^1.2.0",
+    "shortid": "^2.2.6",
     "socket.io": "^1.6.0",
-    "socket.io-client": "^1.6.0"
+    "socket.io-client": "^1.6.0",
+    "taach": "^0.1.0",
+    "taaspace": "^3.0.2"
   },
   "devDependencies": {
     "webpack": "^1.13.3"
